@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_gt58wifi.mk
+    $(LOCAL_DIR)/lineage_gt58ltedo.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_gt58wifi-eng \
-    lineage_gt58wifi-user \
-    lineage_gt58wifi-userdebug
+    lineage_gt58ltedo-eng \
+    lineage_gt58ltedo-user \
+    lineage_gt58ltedo-userdebug

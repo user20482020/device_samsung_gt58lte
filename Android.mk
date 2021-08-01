@@ -17,7 +17,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter gt58wifi, $(TARGET_DEVICE)),)
+ifneq ($(filter gt58ltedo, $(TARGET_DEVICE)),)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
 

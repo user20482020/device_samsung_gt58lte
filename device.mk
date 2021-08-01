@@ -21,7 +21,7 @@
 #
 
 #Inherit from vendor
-$(call inherit-product-if-exists, vendor/samsung/gt58wifi/gt58wifi-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/gt58ltedo/gt58ltedo-vendor.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
@@ -31,7 +31,7 @@ $(call inherit-product, device/samsung/msm8916-common/msm8916.mk)
 # Inhert dalvik heap values from aosp
 $(call inherit-product, frameworks/native/build/tablet-7in-xhdpi-2048-dalvik-heap.mk)
 
-LOCAL_PATH := device/samsung/gt58wifi
+LOCAL_PATH := device/samsung/gt58ltedo
 
 # Common overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -56,8 +56,8 @@ PRODUCT_PACKAGES += \
 # RT 17.1 Tfa9895.cnt does not come with msm8916 repo, it must go in /system/etc as per the following error message
 # tfa98xx: ERROR vendor/samsung/frameworks/audio/tfa_amp/TFA9895/srv/src/tfaContainer.c:tfaReadFile:1493: Can't open /system/etc/Tfa9895.cnt
 PRODUCT_COPY_FILES += \
-       vendor/samsung/gt58wifi/proprietary/lib/hw/audio.primary.msm8916.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.msm8916.so \
-       vendor/samsung/gt58wifi/proprietary/etc/Tfa9895.cnt:$(TARGET_COPY_OUT_SYSTEM)/etc/Tfa9895.cnt
+       vendor/samsung/gt58ltedo/proprietary/lib/hw/audio.primary.msm8916.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.msm8916.so \
+       vendor/samsung/gt58ltedo/proprietary/etc/Tfa9895.cnt:$(TARGET_COPY_OUT_SYSTEM)/etc/Tfa9895.cnt
 
 # Audio
 PRODUCT_COPY_FILES += \
