@@ -47,7 +47,7 @@ void init_target_properties(void)
 		set_wifi_properties();
 	}
 	else if (bootloader.find("T350") == 0) {
-		device = (char *)"gt58ltedo";
+		device = (char *)"gt58wifi";
 		model = (char *)"SM-T350";
 		set_wifi_properties();
 	}
@@ -57,7 +57,7 @@ void init_target_properties(void)
 		set_wifi_properties();
 	}
 	else if (bootloader.find("T355Y") == 0) {
-		device = (char *)"gt58ltedo";
+		device = (char *)"gt58lte";
 		model = (char *)"SM-T355Y";
 		set_wifi_properties();
 	}

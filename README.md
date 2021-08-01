@@ -1,6 +1,6 @@
-# android_device_samsung_gt58ltedo
+# android_device_samsung_gt58lte
 
-## Device tree for Samsung Galaxy Tab (A) SM-T355Y [gt58ltedo]
+## Device tree for Samsung Galaxy Tab (A) SM-T355Y [gt58lte]
 
 Basic   | Spec Sheet
 -------:|:-------------------------
@@ -17,4 +17,4 @@ Display | 1024 x 768, 8.0" (246.38mm)
 Rear Camera  | 5.0 MP
 Front Camera | 2.0 MP
 
-# device_samsung_gt58ltedo - Work in progress
+# device_samsung_gt58lte - Work in progress

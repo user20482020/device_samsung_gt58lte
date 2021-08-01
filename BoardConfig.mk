@@ -24,13 +24,13 @@
 #include device/samsung/msm8916-common/BoardConfigPlatform.mk
 include device/samsung/gte-common/BoardConfigCommon.mk
 
-PLATFORM_PATH := device/samsung/gt58ltedo
+PLATFORM_PATH := device/samsung/gt58lte
 
 # Init
 TARGET_LIBINIT_MSM8916_DEFINES_FILE := $(PLATFORM_PATH)/init/init_gta.cpp
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := gt58ltedo,gt58ltexx,SM-T355Y
+TARGET_OTA_ASSERT_DEVICE := gt58lte,gt58ltexx,SM-T355Y
 
 # Low Latency
 AUDIO_USE_LL_AS_PRIMARY_OUTPUT := true
@@ -48,11 +48,12 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
     /vendor/lib/hw/sensors.vendor.msm8916.so=25
 
 # Kernel
-TARGET_KERNEL_VARIANT_CONFIG := msm8916_sec_gt58lte_eur_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := msm8916_sec_gt58lte_aus_defconfig
 
 # Partition sizes
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3145728000
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 12138278912 /#ToDo: Subtract space used for encryption (See nubian prince repo)
+#ToDo: Subtract space used for encryption (See nubian prince repo)
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 12138278912
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true

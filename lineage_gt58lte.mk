@@ -15,14 +15,17 @@
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
+# Try GO
+$(call inherit-product, build/target/product/go_defaults.mk)
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
-$(call inherit-product, device/samsung/gt58ltedo/device.mk)
+$(call inherit-product, device/samsung/gt58lte/device.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := gt58ltedo
-PRODUCT_NAME := lineage_gt58ltedo
+PRODUCT_DEVICE := gt58lte
+PRODUCT_NAME := lineage_gt58lte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T355Y
 PRODUCT_MANUFACTURER := samsung
@@ -39,7 +42,7 @@ TARGET_SCREEN_WIDTH := 768
 
 # Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="gt58ltedo-user 7.1.1 NMF26X T355YDOU1CRB3 release-keys"
+    PRIVATE_BUILD_DESC="gt58lte-user 7.1.1 NMF26X T355YDOU1CRB3 release-keys"
 
-BUILD_FINGERPRINT := "samsung/gt58ltedo/gt58lte:7.1.1/NMF26X/T355YDOU1CRB3:user/release-keys"
+BUILD_FINGERPRINT := "samsung/gt58lte/gt58lte:7.1.1/NMF26X/T355YDOU1CRB3:user/release-keys"
 
