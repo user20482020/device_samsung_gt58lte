@@ -91,12 +91,18 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/bluetooth/iop_bt.db:$(TARGET_COPY_OUT_SYSTEM)/etc/bluetooth/iop_bt.db \
     $(LOCAL_PATH)/configs/bluetooth/iop_device_list.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/bluetooth/iop_device_list.conf
-    
+
+# RIL
+PRODUCT_PACKAGES += \
+	libril \
+	librilutils \
+	rild
+
 # Device specific properties
+# Remove ro.radio.noril=1 \
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.qualcomm.cabl=0 \
-	ro.carrier=wifi-only \
-	ro.radio.noril=1 \
+	ro.carrier=unknown \
 	ro.config.low_ram=false \
 	ro.config.zram=false \
 	ro.sf.lcd_density=160 \
